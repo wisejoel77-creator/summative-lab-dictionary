@@ -1,14 +1,87 @@
 body {
      
      background: radial-gradient(circle, #ff9a9e, #fad0c4);
+     margin: 0;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      display: flex;
      flex-direction: column;
      text-align: center;
      justify-content: center;
      align-items: center;
-     min-height: 50vh;
+     margin: 10px;
+}
+
+#main-website-container{
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    justify-content: center;
+    padding: 40px;
+    width: 80%;
+    margin-top: 30px;
 }
 
 button {
     background-color: green;
+    color: aliceblue;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 16px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+#Word-results-and-webpage-description{
+    flex: 2;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f87ab3;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    backdrop-filter: blur(5px);
+    
+}
+
+#favourites-section {
+    flex: 1;
+    background-color: #eb428e;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 5px 0;
+
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+input[type="text"] {
+    width: 30%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    outline: none;
+
+}
+
+button.hover{
+    background-color: aqua;
+    transform: scale(1.05);
+}
+
+#word-meaning{
+    margin-top: 20px;
+    text-align: left;
+    line-height: 1.5;
+
+}
+
+#word-meaning.h2{
+    color: #0e0909;
+    margin-bottom: 5px;
 }
