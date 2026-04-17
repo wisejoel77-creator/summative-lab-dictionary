@@ -82,10 +82,16 @@ function displayWordData (data){
   favouriteWordsButton.id = "favourites"
 
   favouriteWordsButton.addEventListener("click", ()=> {
+    const message = document.getElementById("message")
+    
     if(!favourites.includes(word)){
         favourites.push(word)
+     displayFavourites()
+    
+     message.textContent = "Word added to favourite words"
+    } else{
+        message.textContent = "Word already added to favourites!"
     }
-    displayFavourites()
   })
   wordMeaning.append(favouriteWordsButton)
   
